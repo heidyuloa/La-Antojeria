@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menú Dulce y Crujiente</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rojo-principal: #B22222;
+      --gris-fondo: #f4f4f4;
+      --gris-claro: #e8e8e8;
+      --texto-principal: #333;
+      --blanco: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--gris-fondo);
+      color: var(--texto-principal);
+    }
+
+    header {
+      background-color: var(--rojo-principal);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 2.2em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      animation: fadeInDown 1s ease;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: var(--rojo-principal);
+      text-align: center;
+      font-size: 1.8em;
+      margin-bottom: 40px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .card {
+      background-color: var(--blanco);
+      border-radius: 10px;
+      overflow: hidden;
+      width: 250px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      font-size: 1.1em;
+      margin: 10px 0 5px;
+      color: var(--rojo-principal);
+    }
+
+    .card-content p {
+      margin: 5px 0;
+      font-weight: bold;
+      color: #555;
+    }
+
+    footer {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+        Menú 
+    "La Antojeria"
+  </header>
+
+  <!-- GOMITAS -->
+  <section class="section">
+    <h2>Gomitas – L. 35</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="picantess.webp" alt="Gomitas Picantes">
+        <div class="card-content">
+          <h3>Gomitas Picantes</h3>
+          <p>Chamoy, Salsa Valentina tajin yun toque de sabor dulce</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Picante.jfif" alt="Gomitas Dulces">
+        <div class="card-content">
+          <h3>Gomitas Clasicas</h3>
+          <p>Con chamoy y tajin, algo suaves</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="1000.webp" alt="Gomitas Ácidas">
+        <div class="card-content">
+          <h3>Gomitas Ácidas</h3>
+          <p>Con sabor cítrico intenso</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAFFLES -->
+  <section class="section">
+    <h2>Waffles Especiales – L. 55</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="Nutella-Hazelnut-Spreadnutella.webp" alt="Waffle Nutella">
+        <div class="card-content">
+          <h3>Nutella</h3>
+          <p>Chocolate cremoso</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="leche condensada.webp" alt="Waffle Leche Condensada">
+        <div class="card-content">
+          <h3>Leche Condensada</h3>
+          <p>Con canela espolvoreada</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="dulce de leche.webp" alt="Waffle Dulce de Leche">
+        <div class="card-content">
+          <h3>Dulce de Leche</h3>
+          <p>Sabor latino clásico</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPPINGS NORMALES -->
+  <section class="section">
+    <h2>Toppings Normales – L. 10 c/u</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="msm.jpg" alt="M&Ms">
+        <div class="card-content">
+          <h3>M&Ms</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="chispas de colores.jfif" alt="Chispas">
+        <div class="card-content">
+          <h3>Chispas de Colores</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="chispas de chocolate.jpg" alt="Chispas de Chocolate">
+        <div class="card-content">
+          <h3>Chispas de Chocolate</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="fresas.avif" alt="Fresas">
+        <div class="card-content">
+          <h3>Fresas Frescas</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Banana.avif" alt="Banana">
+        <div class="card-content">
+          <h3>Rodajas de Banana</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="panditas.webp" alt="Panditas">
+        <div class="card-content">
+          <h3>Panditas</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPPINGS MEXICANOS -->
+  <section class="section">
+    <h2>Toppings Mexicanos – L. 15 c/u</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="pulparindo.jpg" alt="Pulparindo">
+        <div class="card-content">
+          <h3>Pulparindo</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="skwinkles.webp" alt="Skwinkles">
+        <div class="card-content">
+          <h3>Skwinkles</h3>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Menú Dulce y Crujiente – Diseñado con sabor 🍓
+  </footer>
+</body>
+</html>
